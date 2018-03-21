@@ -2,31 +2,46 @@
 <html>
 <head>
 	<title>cuay</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<script>
+	window.onload = function() {
+		let col1 = document.getElementById("col1");
+		let col2 = document.getElementById("col2");
+		let col3 = document.getElementById("col3");
+		let height = Math.max(col1.offsetHeight, col2.offsetHeight, col3.offsetHeight);
+		console.log(height);
+		col1.style.height = height + "px";
+		col2.style.height = height + "px";
+		col3.style.height = height + "px";
+	}
+	</script>
 </head>
 <body>
-	<h1>Title</h1>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nunc diam, tincidunt eu orci vitae, eleifend faucibus est. Aenean aliquet, mi quis convallis molestie, lacus justo bibendum orci, ut efficitur justo tellus nec ligula
-	</p>
+	<div id="main">
+		<h1>cuay</h1>
+		<p>
+			My name is cuay, and I am an avid programmer. I've been learning JS and MySQL for 2+ years. I freelance with JS and MySQL for an affordable cost. Inquire about my services today.
+		</p>
+	</div>
 	<div id="col1" class="column">
 		<img src="images/code.png" />
-		<h3>Column 1</h3>
+		<h3>Coding</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fringilla mauris, sit amet auctor tellus. In ut nisl tortor.
+			I use JS and MySQL to program bots, libraries, and databases
 		</p>
 	</div>
 	<div id="col2" class="column">
 		<img src="images/treasure_chest.png" />
-		<h3>Column 2</h3>
+		<h3>Quality</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fringilla mauris, sit amet auctor tellus. In ut nisl tortor.
+			Enjoy the rewards of quality freelancing
 		</p>
 	</div>
 	<div id="col3" class="column">
 		<img src="images/game_controller.png" />
-		<h3>Column 3</h3>
+		<h3>Experience</h3>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id fringilla mauris, sit amet auctor tellus. In ut nisl tortor.
+			A love for gaming makes a perfect game/plugin developer.
 		</p>
 	</div>
 </body>
